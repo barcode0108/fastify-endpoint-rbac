@@ -45,6 +45,10 @@ jobs:
         id: test
         run: npm run test
 
+      - name: coverage
+        id: coverage
+        run: npm run coverage
+
       - name: Coveralls Parallel
         uses: coverallsapp/github-action@v1.1.2
         with:
