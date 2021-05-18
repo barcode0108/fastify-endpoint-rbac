@@ -19,11 +19,11 @@ import FastifyRBAC from '@climba03003/fastify-endpoint-rbac'
 fastify.register(FastifyRBAC, {
   // how to retrieve account roles
   retrieveAccountRoles(request, reply) {
-    return [] // must return array or promise array
+    return [] // must return array or Promise<array>
   },
   // how to check rbac globally
   checkRBAC(routeRoles, accountRoles) {
-    return true // must return boolean or promise boolean
+    return true // must return boolean or Promise<boolean>
   },
   // change the error message when return 403
   forbiddenMessage: 'No Privilege'
